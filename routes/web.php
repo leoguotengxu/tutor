@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'StaticPagesController@findatutor');
 Route::get('message', 'StaticPagesController@message');
-Route::get('becomeatutor', 'StaticPagesController@becomeatuto');
 Route::get('login', 'StaticPagesController@login');
 Route::get('signup', 'StaticPagesController@signup');
 

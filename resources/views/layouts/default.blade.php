@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>@yield('title', 'Weibo App') - Laravel 入门教程</title>
+    <title>@yield('title', 'chlingo') - Learn Chinese with online private tutor</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-primary bg-white">
-      <div class="container">
-        <a class="navbar-brand" href="/">Chlingo</a>
-        <ul class="navbar-nav justify-content-end">
-          <li class="nav-item"><a class="nav-link" href="/">Find a Tutor</a></li>
-          <li class="nav-item" ><a class="nav-link" href="#">Message</a></li>
-          <li class="nav-item" ><a class="nav-link" href="#">Become a Tutor</a></li>
-          <li class="nav-item" ><a class="nav-link" href="#">Login</a></li>
-          <li class="nav-item" ><a class="nav-link" href="#">Signup</a></li>
-        </ul>
-      </div>
-    </nav>
+    @include('layouts._header')
 
     <div class="container">
-      @yield('content')
+      <div class="offset-md-1 col-md-10">
+        @yield('content')
+        @include('layouts._footer')
+      </div>
     </div>
   </body>
 </html>
