@@ -3,7 +3,7 @@
 @section('content')
   <div class="jumbotron">
     <p class="lead">
-      teacher
+      fina a teacher
     </p>
     <p>
       learn on line
