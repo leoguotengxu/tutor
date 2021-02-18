@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'StaticPagesController@findatutor')->name('findatutor');
 Route::get('message', 'StaticPagesController@message')->name('message');
-Route::get('login', 'StaticPagesController@login')->name('login');
-Route::get('signup', 'StaticPagesController@signup')->name('signup');
+Route::get('login', 'UsersController@login')->name('login');
+Route::get('signup', 'UsersController@create')->name('signup');
 
 
