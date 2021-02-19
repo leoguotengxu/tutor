@@ -18,4 +18,4 @@ Route::get('message', 'StaticPagesController@message')->name('message');
 Route::get('login', 'UsersController@login')->name('login');
 Route::get('signup', 'UsersController@create')->name('signup');
 
-
+Route::resource('users', 'UsersController');
